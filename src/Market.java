@@ -5,22 +5,26 @@ import java.util.List;
 public class Market {
     private List<Product> products;
 
-    public Market(){
+    public Market() {
         products = new ArrayList<>();
     }
 
-    public void addProduct(Product product){
+    public void addProduct(Product product) {
         products.add(product);
     }
 
-    public void printProducts(){
+    public void printProducts() {
         for (Product p : products) {
             System.out.println(p);
         }
     }
 
-    public void sortProducts(){
+    public void sortProducts() {
         Collections.sort(products);
+    }
+
+    public List<Product> getProducts() {
+        return products;
     }
 
     @Override

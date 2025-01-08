@@ -18,18 +18,16 @@ public abstract class Product implements Comparable<Product> {
     @Override
     public String toString() {
         return "Nombre: " + name +
-                "/// Precio: $" + price;
+                " /// Precio: $" + price;
     }
 
     @Override
     public int compareTo(Product p) {
         if (price < p.price) {
             return -1;
-        }
-        else if (price == p.price) {
+        } else if (price == p.price) {
             return 0;
-        }
-        else {
+        } else {
             return 1;
         }
     }

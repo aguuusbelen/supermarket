@@ -11,5 +11,4 @@ public class Fruit extends Product {
         return super.toString() +
                 " /// Unidad de venta: " + unitOfSale;
     }
-
 }
